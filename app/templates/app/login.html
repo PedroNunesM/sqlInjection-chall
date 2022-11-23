@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% if not key %}
+            <form action="" method="post">
+                <h3>Login:</h3>
+                <input type="text" name="nome">
+                <h3>Senha:</h3>
+                <input type="text" name="senha">
+                <br><br>
+                <button type="submit">Entrar</button>
+                <br>
+                <br>
+                <b>NÃO SERÁ NECESSARIO BRUTEFORCE</b>
+            </form>
+        {% else %}
+            <h2>{{key}}</h2>
+        {% endif %}
+    </body>
+</html>
